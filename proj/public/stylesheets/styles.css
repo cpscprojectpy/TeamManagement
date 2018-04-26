@@ -1,0 +1,84 @@
+body{
+    background-color: #0B70D0;
+    margin: 0;
+}
+.category{
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, .6);
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    text-decoration: none;
+}
+  .all{
+    margin: 10px 3px 10px 10px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.4vh;
+    color: white;
+    cursor: pointer;
+  }
+
+  .clink {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.clink:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+.clink:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: white;
+    transition: width .5s ease;
+}
+.clink:hover:before {
+    width: 100%;
+    background: white;
+    color: white;
+    transition: width .5s ease;
+}
+.clink:hover:after {
+    width: 100%;
+    color: white;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+.clink1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+.default-display{
+    color: white;
+    font-size: 60px;
+    position: relative;
+    cursor: default;
+    left: 32%;
+    top: 43%;
+}
+#table-container{
+    height: 70.2vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
